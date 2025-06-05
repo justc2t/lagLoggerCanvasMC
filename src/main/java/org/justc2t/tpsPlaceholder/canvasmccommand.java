@@ -21,13 +21,13 @@ public class canvasmccommand implements CommandExecutor {
                 switch (arg) {
 
                     case "5s" -> {
-                        player.sendMessage("TPS over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps5s().getAverage()));
+                        player.sendMessage("TPS over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps5s().getAverage()).substring(0, 4));
                     }case "10s" -> {
-                        player.sendMessage("TPS over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps10s().getAverage()));
+                        player.sendMessage("TPS over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps10s().getAverage()).substring(0, 4));
                     }case "15s" -> {
-                        player.sendMessage("TPS over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps15s().getAverage()));
+                        player.sendMessage("TPS over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps15s().getAverage()).substring(0, 4));
                     }case "1m" -> {
-                        player.sendMessage("TPS over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps1m().getAverage()));
+                        player.sendMessage("TPS over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps1m().getAverage()).substring(0, 4));
                     }
 
                     default -> {
@@ -39,13 +39,13 @@ public class canvasmccommand implements CommandExecutor {
                 switch (arg) {
 
                     case "5s" -> {
-                        player.sendMessage("MSTP over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes5s().getAverage()));
+                        player.sendMessage("MSTP over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes5s().getAverage()).substring(0, 4));
                     }case "10s" -> {
-                        player.sendMessage("MSTP over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes10s().getAverage()));
+                        player.sendMessage("MSTP over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes10s().getAverage()).substring(0, 4));
                     }case "15s" -> {
-                        player.sendMessage("MSTP over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes15s().getAverage()));
+                        player.sendMessage("MSTP over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes15s().getAverage()).substring(0, 4));
                     }case "1m" -> {
-                        player.sendMessage("MSTP over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes60s().getAverage()));
+                        player.sendMessage("MSTP over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes60s().getAverage()).substring(0, 4));
                     }
 
                     default -> {

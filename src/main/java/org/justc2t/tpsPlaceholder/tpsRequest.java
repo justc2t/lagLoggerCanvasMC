@@ -44,25 +44,25 @@ public class tpsRequest extends PlaceholderExpansion {
 
         switch(params){
             case "tps_5s" -> {
-                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps5s().getAverage());
+                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps5s().getAverage()).substring(0, 4);
             }case "tps_10s" -> {
-                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps10s().getAverage());
+                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps10s().getAverage()).substring(0, 4);
             }case "tps_15s" -> {
-                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps15s().getAverage());
+                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps15s().getAverage()).substring(0, 4);
             }case "tps_1m" -> {
-                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps1m().getAverage());
+                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps1m().getAverage()).substring(0, 4);
             }
             case "mstp_5s" -> {
-                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes5s().getAverage());
+                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes5s().getAverage()).substring(0, 4);
             }
             case "mstp_10s" -> {
-                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes10s().getAverage());
+                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes10s().getAverage()).substring(0, 4);
             }
             case "mstp_15s" -> {
-                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes15s().getAverage());
+                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes15s().getAverage()).substring(0, 4);
             }
             case "mstp_1m" -> {
-                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes60s().getAverage());
+                return String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes60s().getAverage()).substring(0, 4);
             }
             default -> {
                 return null;
