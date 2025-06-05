@@ -21,13 +21,13 @@ public class canvasmccommand implements CommandExecutor {
                 switch (arg) {
 
                     case "5s" -> {
-                        player.sendMessage(String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps5s().getAverage()));
+                        player.sendMessage("TPS over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps5s().getAverage()));
                     }case "10s" -> {
-                        player.sendMessage(String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps10s().getAverage()));
+                        player.sendMessage("TPS over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps10s().getAverage()));
                     }case "15s" -> {
-                        player.sendMessage(String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps15s().getAverage()));
+                        player.sendMessage("TPS over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps15s().getAverage()));
                     }case "1m" -> {
-                        player.sendMessage(String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps1m().getAverage()));
+                        player.sendMessage("TPS over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTps1m().getAverage()));
                     }
 
                     default -> {
@@ -39,13 +39,13 @@ public class canvasmccommand implements CommandExecutor {
                 switch (arg) {
 
                     case "5s" -> {
-                        player.sendMessage(String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes5s().getAverage()));
+                        player.sendMessage("MSTP over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes5s().getAverage()));
                     }case "10s" -> {
-                        player.sendMessage(String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes10s().getAverage()));
+                        player.sendMessage("MSTP over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes10s().getAverage()));
                     }case "15s" -> {
-                        player.sendMessage(String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes15s().getAverage()));
+                        player.sendMessage("MSTP over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes15s().getAverage()));
                     }case "1m" -> {
-                        player.sendMessage(String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes60s().getAverage()));
+                        player.sendMessage("MSTP over " + arg + " is " + String.valueOf(ThreadedBukkitServer.getInstance().getRegionAtChunk(world, chunk.getX(), chunk.getZ()).getTickHandle().getTickTimes60s().getAverage()));
                     }
 
                     default -> {
