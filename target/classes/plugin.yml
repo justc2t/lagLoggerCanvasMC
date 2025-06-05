@@ -1,0 +1,7 @@
+name: canvasMClogger
+version: '1.0'
+main: org.justc2t.tpsPlaceholder.TpsPlaceholder
+api-version: '1.21'
+commands:
+  canvasmc:
+    permission: 'canvasmc.use'
